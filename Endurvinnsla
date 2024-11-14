@@ -1,0 +1,12 @@
+city = input()
+percentage = float(input())
+counter = 0
+n = int(input())
+for i in range(n):
+    plastic = input()
+    if plastic == 'plast':
+        counter += 1
+if float(counter/n) >= float(1 - percentage):
+    print('Jebb')
+else:
+    print('Neibb')
