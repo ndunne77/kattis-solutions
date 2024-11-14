@@ -1,0 +1,5 @@
+n = int(input())
+for i in range(n):
+    digit = int(input())
+    convert = str(digit)
+    print(len(convert))
