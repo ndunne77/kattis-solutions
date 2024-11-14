@@ -1,0 +1,7 @@
+n = int(input())
+notes = []
+for i in range(n):
+    note = input()
+    notes.append(note)
+list = ''.join(notes)
+print(list[::-1])
