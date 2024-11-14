@@ -1,0 +1,14 @@
+n = int(input())
+missing = []
+alphabet = 'abcdefghijklmnopqrstuvwxyz'
+for i in range(n):
+    phrase = input().lower()
+    for char in alphabet:
+        if char not in phrase:
+            missing += char
+    missing_letters = ''.join(missing)
+    if len(missing_letters) >= 1:
+        print('missing ' + missing_letters)
+    else:
+        print('pangram')
+    missing = []
