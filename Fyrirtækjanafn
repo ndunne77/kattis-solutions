@@ -1,0 +1,8 @@
+s = input()
+vowels = 'aeiouyAEIOUY'
+empty = []
+for i in s:
+    if i in vowels:
+        empty +=  i
+
+print(''.join(empty))
