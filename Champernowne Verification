@@ -1,0 +1,20 @@
+n = int(input())
+led = str(n)
+pink =[]
+red = []
+black =[]
+for i in led:
+    pink.append(i)
+last = int(pink[-1])
+for i in range(last):
+    red.append(i+1)
+for i in red:
+    black.append(str(i))
+cotton = ''.join(black)
+if cotton == led:
+    print(last)
+else:
+    print(-1)
+    
+    
+    
