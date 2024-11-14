@@ -1,0 +1,6 @@
+n = int(input())
+for i in range(n):
+    calories = int(input())
+    intake = (calories + 399) / 400
+    print(int(intake))
+    
