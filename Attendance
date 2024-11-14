@@ -1,0 +1,8 @@
+original = []
+absent = []
+final = []
+for i in range(n):
+    call = input()
+    absent.append(call)
+    if call == 'Present!' and call != absent[0]:
+        original.append(absent[i-1])
