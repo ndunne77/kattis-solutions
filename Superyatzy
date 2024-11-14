@@ -1,0 +1,17 @@
+from collections import Counter
+n, m = map(int, input().split())
+led = []
+
+for i in range(n):
+    dice = int(input())
+    led.append(dice)
+ppp = Counter(led)
+u2 = max(ppp.values())
+if n - u2 <= m:
+    print('Ja')
+else:
+    print('Nej')
+    
+
+        
+    
