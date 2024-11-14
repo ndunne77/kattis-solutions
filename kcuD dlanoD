@@ -1,0 +1,27 @@
+a, b = map(int, input().split())
+c = str(a)
+d = str(b)
+a = c[::-1]
+b = d[::-1]
+led =[]
+zep = []
+for i in a:
+    led.append(i)
+for i in b:
+    zep.append(i)
+for i in range(len(led)):
+    if led[i] == '2' :
+        led[i] = '5'
+    elif led[i] == '5':
+        led[i] = '2'
+for i in range(len(zep)):
+    if zep[i] == '2' :
+        zep[i] = '5'
+    elif zep[i] == '5':
+        zep[i] = '2'
+money1 = int(''.join(led))
+money2 = int(''.join(zep))      
+if money1 > money2:
+    print(1)
+else:
+    print(2)
