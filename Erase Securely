@@ -1,0 +1,22 @@
+n = int(input())
+original = input()
+encoded = input()
+if n % 2 == 0:
+    counter = 0
+    for i in range(len(original)):
+        if original[i] != encoded[i]:
+            counter += 1
+    if counter > 0:
+        print('Deletion failed')
+    else:
+        print('Deletion succeeded')
+elif n % 2 != 0:
+    counter = 0
+    for i in range(len(original)):
+        if original[i] == encoded[i]:
+            counter += 1
+    if counter > 0:
+        print('Deletion failed')
+    else:
+        print('Deletion succeeded')
+    
