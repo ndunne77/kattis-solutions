@@ -1,0 +1,14 @@
+t = int(input())
+for i in range(t):
+    test_case = input()
+    if 'simon says' in test_case:
+        list = test_case.split('simon says ')
+        list2 = ' '.join(list[1:])
+        print(list2)
+    else:
+        print()
+    
+    
+    
+        
+    
