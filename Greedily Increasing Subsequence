@@ -1,0 +1,12 @@
+n = int(input())
+counter = 0
+cox = 0
+gis = [int(x) for x in input().split()]
+newline = []
+for i in gis:
+    if i > cox:
+        newline.append(i)
+        counter += 1
+        cox = i
+print(counter)
+print(*newline)
