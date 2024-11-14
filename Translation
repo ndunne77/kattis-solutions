@@ -1,0 +1,19 @@
+n = int(input())
+nword = input().split()
+m = int(input())
+dic = {}
+for i in range(m):
+    translation = input().split()
+    swedish = translation[0]
+    english = translation[1]
+    dic[swedish] = english
+translator = []
+for i in nword:
+    if i in dic.keys():
+        translator.append(dic.get(i, 0))
+print(' '.join(translator))
+    
+
+    
+        
+    
