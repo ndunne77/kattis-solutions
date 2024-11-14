@@ -1,0 +1,15 @@
+n = int(input())
+real = []
+sl = []
+for i in range(n):
+    a, b = map(int, input().split())
+    r_mins = a*60
+    real.append(r_mins)
+    sl.append(b)
+sum1 = sum(real)
+sum2 = sum(sl)
+if sum2 <= sum1:
+    print('measurement error')
+else:
+    print(float(sum2/sum1))
+    
