@@ -1,0 +1,7 @@
+s, b = map(str, input().split())
+c = float(b)
+count = len(s)
+if c < count:
+    print(c)
+else:
+    print(count)
