@@ -1,0 +1,11 @@
+a, b = map(int, input().split())
+leftovers = b - a
+more = a - b
+if b - a == 1:
+    print('Dr. Chaz will have 1 piece of chicken left over!')
+elif b - a > 1:
+    print('Dr. Chaz will have ' + str(leftovers) + ' pieces of chicken left over!')
+elif a - b > 1:
+    print('Dr. Chaz needs ' + str(more) + ' more pieces of chicken!')
+elif a - b == 1:
+    print('Dr. Chaz needs 1 more piece of chicken!')
