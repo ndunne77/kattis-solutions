@@ -1,0 +1,12 @@
+n = int(input())
+kkk= []
+items = [int(x) for x in input().split()]
+prices = sorted(items)
+prices = prices[::-1]
+for i in range(0, len(prices), 3):
+    kkk.append(prices[i:i+3])
+ppp = []
+for i in kkk:
+    if len(i) == 3:
+        ppp.append(min(i))
+print(sum(ppp))
