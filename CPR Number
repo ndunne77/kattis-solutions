@@ -1,0 +1,19 @@
+n = input()
+dob = n[0:6]
+rest = n[7:11]
+ddone = int(dob[0])*4
+ddtwo  = int(dob[1])*3
+mmone = int(dob[2])*2
+mmtwo = int(dob[3])*7
+yyone= int(dob[4])*6
+yytwo = int(dob[5])*5
+set1 = int(rest[0])*4
+set2 = int(rest[1])*3
+set3 = int(rest[2])*2
+set4 = int(rest[3])*1
+sum1 = ddone + ddtwo + mmone + mmtwo + yyone + yytwo
+sum2 = set1 + set2 + set3 + set4
+if (sum1 + sum2) % 11 == 0:
+    print('1')
+else:
+    print('0')
