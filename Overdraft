@@ -1,0 +1,15 @@
+n = int(input())
+counter = 0
+neg_counter = []
+for i in range(n):
+    transaction = int(input())
+    counter += transaction
+    if counter < 0:
+        neg_counter.append(counter)
+proper = sorted(neg_counter)
+if not proper:
+    print(0)
+else:
+    print(proper[0]*-1)
+
+    
