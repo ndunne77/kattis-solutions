@@ -1,0 +1,5 @@
+n = int(input())
+num_spacejunk = [int(x) for x in input().split()]
+least = min(num_spacejunk)
+lot = num_spacejunk.index(least)
+print(lot)
