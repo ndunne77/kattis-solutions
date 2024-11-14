@@ -1,0 +1,10 @@
+seq = input().split()
+cop = len(seq)
+counter = 0
+for i in seq:
+    if 'ae' in i:
+        counter += 1
+if counter/cop >= 0.4:
+    print('dae ae ju traeligt va')
+else:
+    print('haer talar vi rikssvenska')
