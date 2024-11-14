@@ -1,0 +1,7 @@
+n, k, d = map(int, input().split())
+counter = 0
+for i in range(n):
+    quarantine = int(input())
+    if k + d >= quarantine + 14:
+        counter += 1
+print(counter)
