@@ -1,0 +1,24 @@
+a= input()
+b = input()
+c = input()
+d = input()
+e = input()
+blimps = []
+if 'FBI' in a:
+    blimps.append(1)
+if 'FBI' in b:
+    blimps.append(2)
+if 'FBI' in c:
+    blimps.append(3)
+if 'FBI' in d:
+    blimps.append(4)
+if 'FBI' in e:
+    blimps.append(5)
+if blimps != []:
+    print(*blimps)
+else:
+    print('HE GOT AWAY!')
+
+
+    
+    
