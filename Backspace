@@ -1,0 +1,11 @@
+n = input()
+backlist = []
+for i in n:
+    if i == '<':
+        backlist.pop()
+    else:
+        backlist.append(i)
+print(''.join(backlist))
+
+    
+    
