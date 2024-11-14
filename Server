@@ -1,0 +1,10 @@
+a, b = map(int, input().split())
+kat = [int(x) for x in input().split()]
+counter = 0
+for i in kat:
+    if b - i < 0:
+        break
+    else:
+        counter += 1
+        b = b - i
+print(counter) 
