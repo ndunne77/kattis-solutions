@@ -1,0 +1,5 @@
+n = int(input())
+for i in range(n):
+    powerstrips = [int(x) for x in input().split()]
+    total = sum(powerstrips[1:]) - len(powerstrips) + 2
+    print(total)
