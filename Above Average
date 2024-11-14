@@ -1,0 +1,15 @@
+n = int(input())
+for i in range(n):
+    scores = [int(x) for x in input().split()]
+    counter = 0
+    led = scores[0]
+    sumup = scores[1:]
+    sumup2 = sum(sumup)
+    avg = float(sumup2/led)
+    for i in scores[1:]:
+        if i > avg:
+            counter += 1
+    precision_value = format(((counter/led)*100), '.3f')
+    print(precision_value + '%')
+    
+    
