@@ -1,0 +1,16 @@
+s = input()
+total = len(s)
+l_t = int(len(s)/3)
+g_t = l_t*2
+r_t = l_t*3
+stick = []
+stick.append(s[0:l_t])
+stick.append(s[l_t:g_t])
+stick.append(s[g_t:r_t])
+if stick[0] == stick [1] or stick[0] == stick[2]:
+    print(stick[0])
+else:
+    print(stick[1])
+
+    
+
