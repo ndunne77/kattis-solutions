@@ -1,0 +1,12 @@
+n = input()
+length = len(n)
+if length % 2 == 0:
+    position = length / 2 
+    first_bracket = n.find('(') + 1
+    if position == first_bracket:
+        print('correct')
+    else:
+        print('fix')
+else:
+    print('fix')
+    
