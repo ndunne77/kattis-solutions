@@ -1,0 +1,12 @@
+n = int(input())
+tok_tik = {}
+for i in range(n):
+    video = input().split()
+    name = video[0]
+    views = int(video[1])
+    if name in tok_tik:
+        tok_tik[name] = tok_tik.get(name) + views
+    else:
+        tok_tik[name] = views
+print(max(tok_tik, key = tok_tik.get))
+        
