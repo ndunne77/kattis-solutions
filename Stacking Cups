@@ -1,0 +1,21 @@
+n = int(input())
+radius = []
+cups = {}
+for i in range(n):
+    cup = input().split()
+    alpha = cup[0]
+    beta = cup[1]
+    if beta.isdigit():
+        radius.append(int(beta))
+        cups[int(beta)] = alpha
+    else:
+        led = int(int(alpha)/2)
+        radius.append(led)
+        cups[led] = beta
+goodlist = sorted(radius)
+for i in goodlist:
+    if i in cups:
+        print(cups.get(i, 0))
+    
+    
+    
