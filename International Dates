@@ -1,0 +1,10 @@
+n= input()
+dd = int(n[0:2])
+mm = int(n[3:5])
+yyyy = int(n[6:10])
+if dd <= 12 and mm <=12:
+    print('either')
+elif dd > 12:
+    print('EU')
+elif mm > 12:
+    print('US')
