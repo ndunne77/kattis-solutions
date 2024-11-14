@@ -1,0 +1,17 @@
+n = int(input())
+counter = []
+for i in range(n):
+    rem = int(input())
+    counter.append(rem)
+last = counter[-1]
+forgotten = []
+for i in range(last):
+    if i not in counter:
+        forgotten.append(i)
+del forgotten[0]
+if not forgotten:
+    print('good job')
+else:
+    for i in forgotten:
+        print(i)
+        
