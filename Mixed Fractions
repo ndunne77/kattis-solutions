@@ -1,0 +1,13 @@
+while True:
+    a, b = map(int, input().split())
+    if a > 0 and b > 0:
+        digit = a // b
+        remainder = a % b
+        if digit == 0:
+            print('0', a, '/', b)
+        elif digit >= 1 and remainder > 0:
+            print(digit, remainder, '/', b)
+        elif digit >= 1 and remainder == 0:
+            print(digit, remainder, '/', b)
+    elif a == 0 and b == 0:
+        break
