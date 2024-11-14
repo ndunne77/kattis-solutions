@@ -1,0 +1,8 @@
+n = int(input())
+nlist = [int(x) for x in input().split()]
+glist = sorted(nlist)
+counter = 0
+for i in range(len(nlist)):
+    if nlist[i] != glist[i]:
+        counter += 1
+print(counter)
