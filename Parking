@@ -1,0 +1,7 @@
+t = int(input())
+for i in range(t):
+    n = int(input())
+    list = [int(x) for x in input().split()]
+    distance = (max(list) - min(list))*2
+    print(distance)
+        
