@@ -1,0 +1,14 @@
+while True:
+    ts = []
+    a, b, c = map(int, input().split())
+    ts.append(a)
+    ts.append(b)
+    ts.append(c)
+    proper = sorted(ts)
+    
+    if proper[0] == 0 and proper[1] == 0 and proper[2] == 0:
+        break
+    elif proper[0]**2 + proper[1] **2 == proper[2]**2:
+        print('right')
+    elif proper[0]**2 + proper[1] **2 != proper[2]**2:
+        print('wrong')
