@@ -1,0 +1,11 @@
+n = int(input())
+name = input()
+names = name.split()
+if n > 13:
+    print(names[12])
+elif n < 13:
+    sweet = 12 % n
+    print(names[sweet])
+elif n == 13:
+    print(names[12])
+    
