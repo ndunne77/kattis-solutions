@@ -1,0 +1,2 @@
+sender = input()
+print('Kvedja,\n' + sender)
