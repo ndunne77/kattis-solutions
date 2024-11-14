@@ -1,0 +1,15 @@
+while True:
+    a, b = map(int, input().split())
+    if a + b == 13:
+        print('Never speak again.')
+    elif a > b:
+        print('To the convention.')
+    elif b > a:
+        print('Left beehind.')
+    elif a > 0 and b > 0 and a == b:
+        print('Undecided.')
+    elif a == 0 and b == 0:
+        break
+    
+
+    
