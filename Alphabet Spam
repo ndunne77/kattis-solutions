@@ -1,0 +1,21 @@
+n = input()
+upper = 0
+lower = 0
+whitespace = 0
+symbol = 0
+for i in (n):
+    if i.isupper():
+        upper += 1
+    elif i.islower():
+        lower += 1
+    elif i == '_':
+        whitespace += 1
+    else:
+        symbol += 1
+total = len(n)
+print(float(whitespace/total))
+print(float(lower/total))
+print(float(upper/total))
+print(float(symbol/total))
+
+        
