@@ -1,0 +1,11 @@
+try:
+    while True:
+        sug = input()
+        sugy = sug.lower()
+        if 'problem' in sugy:
+            print('yes')
+        else:
+            print('no')
+except:
+    EOFError
+    pass
