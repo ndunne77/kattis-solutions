@@ -1,0 +1,15 @@
+dictionary = dict()
+
+while True:
+    entry = input()
+    if entry == '':
+        break
+    entry = entry.split()
+    dictionary[entry[1]] = entry[0]
+    
+while True:
+    try:
+        word = input()
+        print(dictionary.get(word, 'eh'))
+    except EOFError:
+        break
