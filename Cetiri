@@ -1,0 +1,17 @@
+sequence = [int(x) for x in input().split()]
+dairy = sorted(sequence)
+lip = dairy[1]
+hair = dairy[2]
+lister = []
+first_seq = dairy[1] - dairy[0]
+sec_seq = dairy[2] - dairy[1]
+lister.append(first_seq)
+lister.append(sec_seq)
+minny = min(lister)
+if first_seq == sec_seq:
+    print(hair + first_seq)
+elif first_seq < sec_seq:
+    print(lip + minny)
+elif first_seq > sec_seq:
+    print(first_seq)
+    
